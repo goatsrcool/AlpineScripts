@@ -1,0 +1,17 @@
+KEYMAPOPTS="us us"
+HOSTNAMEOPTS="-n alpine"
+INTERFACESOPTS="
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet dhcp
+    hostname alpine
+"
+DNSOPTS="-d example.com 8.8.8.8"
+TIMEZONEOPTS="-z America/New York"
+PROXYOPTS="none"
+APKREPOSOPTS="-1"
+SSHDOPTS="openssh"
+NTPOPTS="-c openntpd"
+DISKOPTS="-m sys /dev/sda"
